@@ -1,0 +1,37 @@
+Here's the original reddit post that spawned all of this silliness:
+
+I had a 64MB flash drive in college. (Yes, Megabytes) and I hadn't seen the thing in ages until a few days ago. I popped it in a laptop, tried some repair tools and some stuff, but nothing seemed to be able to read it.
+
+I made an image of the drive and started scrolling through it, a bunch of matrix-looking stuff flying by on the screen except for the occasional blurt of plain text, maybe some filenames.
+
+Scratching my head, I started looking for forensics tools and came across something called "Foremost", apparently by our good friends at the US government. It hadn't been touched since 2010, but it looked simple enough to compile. (a thought I would later regret)
+
+After days of fighting with multiple variable definitions and undefined references, I finally got it.
+
+I was trying to compile it with the C99 standard, since it was last touched in 2010. Apparently, the code can time travel and it's actually using a standard from 2011. Whatever.
+
+I was still getting multiple definition errors, and after a knock down, drag out, brain bashing with google and chatgpt, I finally picked up on a compiler option "-fcommon" which, confusingly, lets you define things in your code all willy nilly. How that even actually works, I have no idea. Somehow, that made it work.
+
+It's 4am. The friggin thing works. Finally, I could apply this newly built tool to the disk image file I had, and could sit back while it rips out all of the various files hidden within.
+
+I went through all the big ones, JPG, AVI, EXE, DOCX, MSI, GIF, ZIP, RAR, etc etc etc
+
+Finally, I had accessible files from the mangled digital corpse of this ancient drive. I dig in, frantically scanning through every directory, looking through every potential captured file like a kid ripping open presents on christmas. "I might have some really cool stuff in here, maybe old saved conversations or emails.. maybe old doom mods?"
+
+After days of mashing the code into something workable, damn near rewriting it... the toil, the misdirection, the intrigue, the confusion, the wisdom. All of it, finally I got to the sweet nougaty center of my data.
+
+Winamp skins. Fucking. Winamp skins.
+
+I'm going to bed.
+
+*************************************************************************
+
+Original post link:
+
+https://www.reddit.com/r/CasualConversation/comments/184zr2n/brought_a_flash_drive_back_to_life_and_i_regret_it/
+
+In this git, you'll find the files that the forensic program pulled from the drive so you can all experience the absolutely underwhelming sensation of having done all of this stuff only to find winamp skins, and not even particularly good ones at that.
+
+Enjoy, I think.   
+
+RTW - 11/28/2023
